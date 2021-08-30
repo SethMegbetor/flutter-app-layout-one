@@ -21,10 +21,17 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Text('Awudome Tsito, Volta Region',
-                  style: TextStyle(
-                    color: Colors.grey[500],
-                  ))
+              Text(
+                'Awudome Tsito, Volta Region',
+                style: TextStyle(
+                  color: Colors.grey[500],
+                ),
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.red[500],
+              ),
+              const Text('41')
             ],
           ),
         ),
