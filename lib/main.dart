@@ -39,6 +39,17 @@ class MyApp extends StatelessWidget {
     ),
   );
 
+  Color color = Theme.of(context).primaryColor;
+
+  Widget buttonSection = Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+      _buildButtonColumn(color, Icons.call, 'CALL'),
+      _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+      _buildButtonColumn(color, Icons.share, 'SHARE'),
+    ],
+  );
+
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Welcome to Flutter',
@@ -49,6 +60,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             titleSection,
+            buttonSection,
           ],
         ),
       ),
@@ -71,7 +83,7 @@ class MyApp extends StatelessWidget {
               color: color,
             ),
           ),
-        )
+        ),
       ],
     );
   }
